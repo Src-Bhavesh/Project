@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Snake Game</title>
+  <style>
+    body { 
+      background-color: #575656; 
+      color: white; 
+      font-family: sans-serif; 
+      display: flex; 
+      flex-direction: column; 
+      align-items: center; 
+    }
+    #d0 { 
+      padding: 20px; 
+    }
+    #btn { 
+      padding: 10px 40px; 
+      cursor: pointer; 
+    }
+    #scoreBoard { 
+      font-size: 24px; 
+      margin: 10px; 
+    }
+    #gameCanvas { 
+      border: 2px solid #555;
+      background-color: #000; 
+      }
+  </style>
+</head>
+<body>
+  <div id="scoreBoard">Score: <span id="scoreValue">0</span></div>
+  <div id="d1">
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+  </div>
+  <div id="d0">
+    <button onclick="start()" id="btn">Start</button>
+  </div>
+  <script src="02.js"></script>
+</body>
+</html>
